@@ -14,20 +14,19 @@ rl.question(`Masukkan jumlah barang: `, jB => {
     jumlahBarang = parseInt(jB);
 
     if (isNaN(jumlahBarang) || jumlahBarang <= 0) {
-        console.log(`Jumlah barang harus berupa bilangan positif.`);
+        console.log(`Error: Hanya menerima bilangan bulat positif.`);
         rl.close();
         return;
     }
 
     const inputHargaBarang = (index) => {
         if (index < jumlahBarang) {
-            rl.question(`Masukkan harga barang ke-${index + 1}: `, (valueHargaBarang) => {
-                let hB = parseFloat(valueHargaBarang);
-                if (isNaN(hB) || hB < 0) {
-                    console.log(`Harga barang harus berupa bilangan positif.`);
+            rl.question(`Masukkan harga barang ke-${index + 1}: `, (inputHargaBarang) => {
+                let floatHargaBarang = parseFloat(inputHargaBarang);
+                if (isNaN(floatHargaBarang) || floatHargaBarang < 0) {
                     inputHargaBarang(index);
                 } else {
-                    hargaBarang.push(hB);
+                    hargaBarang.push(floatHargaBarang);
                     inputHargaBarang(index + 1);
                 }
             });
