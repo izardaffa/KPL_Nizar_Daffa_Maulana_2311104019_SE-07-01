@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP_GUI_2311104019</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        .container {
+            /* border: 1px solid red; */
+            padding: 4rem 24rem;
+        }
+
+        #myForm {
+            background-color: dodgerblue;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+        }
+
+        #myForm .btn-group {
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        #myForm .btn-group input,
+        #myForm .btn-group button {
+            border-radius: 10px;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 2.5rem;
+        }
+
+        #myForm .btn-group input {
+            flex-grow: 8;
+        }
+
+        #myForm .btn-group button {
+            flex-grow: 2;
+        }
+
+        #output {
+            display: none;
+            border-radius: 10px;
+            padding: 1rem 1rem;
+            font-size: 2.5rem;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <form id="myForm">
+            <div class="btn-group">
+                <input type="text" name="nama" id="nama" placeholder="Masukkan namamu...">
+                <button type="submit">Submit</button>
+            </div>
+            <p id="output"></p>
+        </form>
+    </main>
+
+    <script>
+        const myForm = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        myForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            output.style.display = 'block';
+            output.innerText = `Halo ${myForm.nama.value}`;
+        });
+    </script>
+</body>
+</html>
