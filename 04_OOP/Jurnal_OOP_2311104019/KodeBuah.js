@@ -1,31 +1,22 @@
 class KodeBuah {
-    constructor(nama, kode) {
-        this.nama = nama;
-        this.kode = kode;
+    constructor() {
+        this.kodeBuah = {
+            "Apel": "A00",
+            "Aprikot": "B00",
+            "Alpukat": "C00",
+            "Pisang": "D00",
+            "Paprika": "E00",
+            "Kurma": "K00",
+            "Durian": "L00",
+            "Anggur": "M00",
+            "Melon": "N00",
+            "Semangka": "O00"
+        };
     }
 
-    getKodeBuah() {
-        return `${this.nama} | ${this.kode}`;
+    getKodeBuah(namaBuah) {
+        return this.kodeBuah[namaBuah] || "Kode tidak ditemukan";
     }
 }
 
-const kodeBuah = [
-    new KodeBuah('Apel', 'A00'),
-    new KodeBuah('Aprikot', 'B00'),
-    new KodeBuah('Alpukat', 'C00'),
-    new KodeBuah('Pisang', 'D00'),
-    new KodeBuah('Paprika', 'E00'),
-    new KodeBuah('Blackberry', 'F00'),
-    new KodeBuah('Ceri', 'H00'),
-    new KodeBuah('Kelapa', 'I00'),
-    new KodeBuah('Jagung', 'J00'),
-    new KodeBuah('Kurma', 'K00'),
-    new KodeBuah('Durian', 'L00'),
-    new KodeBuah('Anggur', 'M00'),
-    new KodeBuah('Melon', 'N00'),
-    new KodeBuah('Semangka', 'O00'),
-];
-
-kodeBuah.forEach(item => console.log(item.getKodeBuah()));
-
-// export default KodeBuah;
+module.exports = KodeBuah;
