@@ -19,4 +19,6 @@ class KodeBuah {
     }
 }
 
-module.exports = KodeBuah;
+const kodeBuah = new KodeBuah;
+console.log('Kode buah Apel:', kodeBuah.getKodeBuah('Apel'));
+console.log('Kode buah Pisang:', kodeBuah.getKodeBuah('Pisang'));

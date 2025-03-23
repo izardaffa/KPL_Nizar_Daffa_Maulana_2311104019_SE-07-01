@@ -30,4 +30,8 @@ class PosisiKarakterGame {
     }
 }
 
-module.exports = PosisiKarakterGame;
+const game = new PosisiKarakterGame();
+game.ubahState("TombolS");
+game.ubahState("TombolW");
+game.ubahState("Terbang");
+game.ubahState("Jongkok");
