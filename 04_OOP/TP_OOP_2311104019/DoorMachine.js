@@ -18,4 +18,7 @@ class DoorMachine {
     }
 }
 
-module.exports = DoorMachine;
+const door = new DoorMachine()
+door.lock()
+door.unlock()
+door.lock()
