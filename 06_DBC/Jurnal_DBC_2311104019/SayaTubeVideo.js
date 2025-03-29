@@ -73,19 +73,19 @@ class SayaTubeUser {
 // Main function to demonstrate the functionality
 function main() {
     try {
-        const user = new SayaTubeUser("Nama_Panggilan_Praktikan");
+        const user = new SayaTubeUser("Nizar Daffa");
 
         const videoTitles = [
-            "Review Film Inception oleh Nama_Panggilan_Praktikan",
-            "Review Film Interstellar oleh Nama_Panggilan_Praktikan",
-            "Review Film The Dark Knight oleh Nama_Panggilan_Praktikan",
-            "Review Film Parasite oleh Nama_Panggilan_Praktikan",
-            "Review Film Whiplash oleh Nama_Panggilan_Praktikan",
-            "Review Film The Godfather oleh Nama_Panggilan_Praktikan",
-            "Review Film Pulp Fiction oleh Nama_Panggilan_Praktikan",
-            "Review Film Fight Club oleh Nama_Panggilan_Praktikan",
-            "Review Film Forrest Gump oleh Nama_Panggilan_Praktikan",
-            "Review Film The Matrix oleh Nama_Panggilan_Praktikan"
+            "Review Film Inception oleh Nizar Daffa",
+            "Review Film Interstellar oleh Nizar Daffa",
+            "Review Film The Dark Knight oleh Nizar Daffa",
+            "Review Film Parasite oleh Nizar Daffa",
+            "Review Film Whiplash oleh Nizar Daffa",
+            "Review Film The Godfather oleh Nizar Daffa",
+            "Review Film Pulp Fiction oleh Nizar Daffa",
+            "Review Film Fight Club oleh Nizar Daffa",
+            "Review Film Forrest Gump oleh Nizar Daffa",
+            "Review Film The Matrix oleh Nizar Daffa"
         ];
 
         videoTitles.forEach(title => {

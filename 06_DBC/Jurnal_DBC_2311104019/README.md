@@ -53,19 +53,19 @@ class SayaTubeUser {
 
 // Main function to demonstrate the functionality
 function main() {
-    const user = new SayaTubeUser("Nama_Panggilan_Praktikan");
+    const user = new SayaTubeUser("Nizar Daffa");
 
     const videoTitles = [
-        "Review Film Inception oleh Nama_Panggilan_Praktikan",
-        "Review Film Interstellar oleh Nama_Panggilan_Praktikan",
-        "Review Film The Dark Knight oleh Nama_Panggilan_Praktikan",
-        "Review Film Parasite oleh Nama_Panggilan_Praktikan",
-        "Review Film Whiplash oleh Nama_Panggilan_Praktikan",
-        "Review Film The Godfather oleh Nama_Panggilan_Praktikan",
-        "Review Film Pulp Fiction oleh Nama_Panggilan_Praktikan",
-        "Review Film Fight Club oleh Nama_Panggilan_Praktikan",
-        "Review Film Forrest Gump oleh Nama_Panggilan_Praktikan",
-        "Review Film The Matrix oleh Nama_Panggilan_Praktikan"
+        "Review Film Inception oleh Nizar Daffa",
+        "Review Film Interstellar oleh Nizar Daffa",
+        "Review Film The Dark Knight oleh Nizar Daffa",
+        "Review Film Parasite oleh Nizar Daffa",
+        "Review Film Whiplash oleh Nizar Daffa",
+        "Review Film The Godfather oleh Nizar Daffa",
+        "Review Film Pulp Fiction oleh Nizar Daffa",
+        "Review Film Fight Club oleh Nizar Daffa",
+        "Review Film Forrest Gump oleh Nizar Daffa",
+        "Review Film The Matrix oleh Nizar Daffa"
     ];
 
     videoTitles.forEach(title => {
@@ -101,17 +101,17 @@ Penjelasan:
 ### Output
 
 ```bash
-User: Nama_Panggilan_Praktikan
-Video 1 judul: Review Film Inception oleh Nama_Panggilan_Praktikan
-Video 2 judul: Review Film Interstellar oleh Nama_Panggilan_Praktikan
-Video 3 judul: Review Film The Dark Knight oleh Nama_Panggilan_Praktikan
-Video 4 judul: Review Film Parasite oleh Nama_Panggilan_Praktikan
-Video 5 judul: Review Film Whiplash oleh Nama_Panggilan_Praktikan
-Video 6 judul: Review Film The Godfather oleh Nama_Panggilan_Praktikan
-Video 7 judul: Review Film Pulp Fiction oleh Nama_Panggilan_Praktikan
-Video 8 judul: Review Film Fight Club oleh Nama_Panggilan_Praktikan
-Video 9 judul: Review Film Forrest Gump oleh Nama_Panggilan_Praktikan
-Video 10 judul: Review Film The Matrix oleh Nama_Panggilan_Praktikan
+User: Nizar Daffa
+Video 1 judul: Review Film Inception oleh Nizar Daffa
+Video 2 judul: Review Film Interstellar oleh Nizar Daffa
+Video 3 judul: Review Film The Dark Knight oleh Nizar Daffa
+Video 4 judul: Review Film Parasite oleh Nizar Daffa
+Video 5 judul: Review Film Whiplash oleh Nizar Daffa
+Video 6 judul: Review Film The Godfather oleh Nizar Daffa
+Video 7 judul: Review Film Pulp Fiction oleh Nizar Daffa
+Video 8 judul: Review Film Fight Club oleh Nizar Daffa
+Video 9 judul: Review Film Forrest Gump oleh Nizar Daffa
+Video 10 judul: Review Film The Matrix oleh Nizar Daffa
 Total Play Count: 4160
 ```
 
@@ -193,19 +193,19 @@ class SayaTubeUser {
 // Main function to demonstrate the functionality
 function main() {
     try {
-        const user = new SayaTubeUser("Nama_Panggilan_Praktikan");
+        const user = new SayaTubeUser("Nizar Daffa");
 
         const videoTitles = [
-            "Review Film Inception oleh Nama_Panggilan_Praktikan",
-            "Review Film Interstellar oleh Nama_Panggilan_Praktikan",
-            "Review Film The Dark Knight oleh Nama_Panggilan_Praktikan",
-            "Review Film Parasite oleh Nama_Panggilan_Praktikan",
-            "Review Film Whiplash oleh Nama_Panggilan_Praktikan",
-            "Review Film The Godfather oleh Nama_Panggilan_Praktikan",
-            "Review Film Pulp Fiction oleh Nama_Panggilan_Praktikan",
-            "Review Film Fight Club oleh Nama_Panggilan_Praktikan",
-            "Review Film Forrest Gump oleh Nama_Panggilan_Praktikan",
-            "Review Film The Matrix oleh Nama_Panggilan_Praktikan"
+            "Review Film Inception oleh Nizar Daffa",
+            "Review Film Interstellar oleh Nizar Daffa",
+            "Review Film The Dark Knight oleh Nizar Daffa",
+            "Review Film Parasite oleh Nizar Daffa",
+            "Review Film Whiplash oleh Nizar Daffa",
+            "Review Film The Godfather oleh Nizar Daffa",
+            "Review Film Pulp Fiction oleh Nizar Daffa",
+            "Review Film Fight Club oleh Nizar Daffa",
+            "Review Film Forrest Gump oleh Nizar Daffa",
+            "Review Film The Matrix oleh Nizar Daffa"
         ];
 
         videoTitles.forEach(title => {
@@ -247,15 +247,15 @@ Penjelasan:
 ### Output
 
 ```bash
-Nama_Panggilan_Praktikan
-Video 1 judul: Review Film Inception oleh Nama_Panggilan_Praktikan
-Video 2 judul: Review Film Interstellar oleh Nama_Panggilan_Praktikan
-Video 3 judul: Review Film The Dark Knight oleh Nama_Panggilan_Praktikan
-Video 4 judul: Review Film Parasite oleh Nama_Panggilan_Praktikan
-Video 5 judul: Review Film Whiplash oleh Nama_Panggilan_Praktikan
-Video 6 judul: Review Film The Godfather oleh Nama_Panggilan_Praktikan
-Video 7 judul: Review Film Pulp Fiction oleh Nama_Panggilan_Praktikan
-Video 8 judul: Review Film Fight Club oleh Nama_Panggilan_Praktikan
+Nizar Daffa
+Video 1 judul: Review Film Inception oleh Nizar Daffa
+Video 2 judul: Review Film Interstellar oleh Nizar Daffa
+Video 3 judul: Review Film The Dark Knight oleh Nizar Daffa
+Video 4 judul: Review Film Parasite oleh Nizar Daffa
+Video 5 judul: Review Film Whiplash oleh Nizar Daffa
+Video 6 judul: Review Film The Godfather oleh Nizar Daffa
+Video 7 judul: Review Film Pulp Fiction oleh Nizar Daffa
+Video 8 judul: Review Film Fight Club oleh Nizar Daffa
 Total Play Count: 5962
 Play count must be between 0 and 25,000,000.
 ```
