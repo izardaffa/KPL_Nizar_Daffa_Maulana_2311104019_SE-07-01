@@ -1,5 +1,10 @@
 class SayaTubeVideo {
     constructor(title) {
+        // Precondition: Judul video tidak null dan panjang maksimal 200 karakter
+        if (title == null || title.length > 200) {
+            throw new Error("Title must not be null and must be less than or equal to 200 characters.");
+        }
+
         // Generate random 5-digit ID
         this.id = Math.floor(10000 + Math.random() * 90000);
         this.title = title;
@@ -7,10 +12,20 @@ class SayaTubeVideo {
     }
 
     IncreasePlayCount(count) {
-        if (count < 0) {
-            throw new Error("Play count cannot be negative");
+        // Precondition: Play count tidak negatif dan maksimal 25.000.000
+        if (count < 0 || count > 25000000) {
+            throw new Error("Play count must be between 0 and 25,000,000.");
         }
-        this.playCount += count;
+
+        // Exception: Pastikan tidak terjadi overflow
+        try {
+            if (this.playCount + count > Number.MAX_SAFE_INTEGER) {
+                throw new Error("Play count overflow.");
+            }
+            this.playCount += count;
+        } catch (error) {
+            console.error(error.message);
+        }
     }
 
     PrintVideoDetails() {
@@ -22,6 +37,11 @@ class SayaTubeVideo {
 
 class SayaTubeUser {
     constructor(username) {
+        // Precondition: Username tidak null dan panjang maksimal 100 karakter
+        if (username == null || username.length > 100) {
+            throw new Error("Username must not be null and must be less than or equal to 100 characters.");
+        }
+
         this.id = Math.floor(10000 + Math.random() * 90000);
         this.Username = username;
         this.uploadedVideos = [];
@@ -32,45 +52,59 @@ class SayaTubeUser {
     }
 
     AddVideo(video) {
-        if (!(video instanceof SayaTubeVideo)) {
-            throw new Error("Invalid video object");
+        // Precondition: Video tidak null dan playCount kurang dari integer maksimum
+        if (video == null || video.playCount >= Number.MAX_SAFE_INTEGER) {
+            throw new Error("Video must not be null and play count must be less than the maximum integer value.");
         }
+
         this.uploadedVideos.push(video);
     }
 
     PrintAllVideoPlaycount() {
         console.log(`User: ${this.Username}`);
-        this.uploadedVideos.forEach((video, index) => {
-            console.log(`Video ${index + 1} judul: ${video.title}`);
-        });
+        // Postcondition: Maksimal 8 video yang di-print
+        const maxVideosToPrint = Math.min(this.uploadedVideos.length, 8);
+        for (let i = 0; i < maxVideosToPrint; i++) {
+            console.log(`Video ${i + 1} judul: ${this.uploadedVideos[i].title}`);
+        }
     }
 }
 
 // Main function to demonstrate the functionality
 function main() {
-    const user = new SayaTubeUser("Nama_Panggilan_Praktikan");
+    try {
+        const user = new SayaTubeUser("Nama_Panggilan_Praktikan");
 
-    const videoTitles = [
-        "Review Film Inception oleh Nama_Panggilan_Praktikan",
-        "Review Film Interstellar oleh Nama_Panggilan_Praktikan",
-        "Review Film The Dark Knight oleh Nama_Panggilan_Praktikan",
-        "Review Film Parasite oleh Nama_Panggilan_Praktikan",
-        "Review Film Whiplash oleh Nama_Panggilan_Praktikan",
-        "Review Film The Godfather oleh Nama_Panggilan_Praktikan",
-        "Review Film Pulp Fiction oleh Nama_Panggilan_Praktikan",
-        "Review Film Fight Club oleh Nama_Panggilan_Praktikan",
-        "Review Film Forrest Gump oleh Nama_Panggilan_Praktikan",
-        "Review Film The Matrix oleh Nama_Panggilan_Praktikan"
-    ];
+        const videoTitles = [
+            "Review Film Inception oleh Nama_Panggilan_Praktikan",
+            "Review Film Interstellar oleh Nama_Panggilan_Praktikan",
+            "Review Film The Dark Knight oleh Nama_Panggilan_Praktikan",
+            "Review Film Parasite oleh Nama_Panggilan_Praktikan",
+            "Review Film Whiplash oleh Nama_Panggilan_Praktikan",
+            "Review Film The Godfather oleh Nama_Panggilan_Praktikan",
+            "Review Film Pulp Fiction oleh Nama_Panggilan_Praktikan",
+            "Review Film Fight Club oleh Nama_Panggilan_Praktikan",
+            "Review Film Forrest Gump oleh Nama_Panggilan_Praktikan",
+            "Review Film The Matrix oleh Nama_Panggilan_Praktikan"
+        ];
 
-    videoTitles.forEach(title => {
-        const video = new SayaTubeVideo(title);
-        video.IncreasePlayCount(Math.floor(Math.random() * 1000)); // Simulate random play count
-        user.AddVideo(video);
-    });
+        videoTitles.forEach(title => {
+            const video = new SayaTubeVideo(title);
+            video.IncreasePlayCount(Math.floor(Math.random() * 1000)); // Simulate random play count
+            user.AddVideo(video);
+        });
 
-    user.PrintAllVideoPlaycount();
-    console.log(`Total Play Count: ${user.GetTotalVideoPlayCount()}`);
+        user.PrintAllVideoPlaycount();
+        console.log(`Total Play Count: ${user.GetTotalVideoPlayCount()}`);
+
+        // Test exception handling with overflow
+        const testVideo = new SayaTubeVideo("Test Video for Overflow");
+        for (let i = 0; i < 10; i++) {
+            testVideo.IncreasePlayCount(Number.MAX_SAFE_INTEGER); // Force overflow
+        }
+    } catch (error) {
+        console.error(error.message);
+    }
 }
 
 // Run the main function
