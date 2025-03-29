@@ -115,7 +115,7 @@ Video 10 judul: Review Film The Matrix oleh Nama_Panggilan_Praktikan
 Total Play Count: 4160
 ```
 
-### Kode Sekarang
+### Kode setelah Implementasi Design by Contract
 
 ```js
 class SayaTubeVideo {
