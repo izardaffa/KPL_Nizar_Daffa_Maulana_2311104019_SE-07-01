@@ -1,0 +1,39 @@
+{
+  "members" : [
+    {
+       "firstName": "Nizar",
+       "lastName": "Daffa Maulana",
+       "gender": "male",
+       "age": 20,
+       "nim": "2311104019"
+    },
+    {
+       "firstName": "M",
+       "lastName": "Faris",
+       "gender": "male",
+       "age": 20,
+       "nim": "2311104017"
+    },
+    {
+       "firstName": "Yoga",
+       "lastName": "Eka Pratama",
+       "gender": "male",
+       "age": 20,
+       "nim": "2311104023"
+    },
+    {
+       "firstName": "Raihan",
+       "lastName": "Sastra Wibyanto",
+       "gender": "male",
+       "age": 20,
+       "nim": "2311104020"
+    },
+    {
+       "firstName": "Tegar",
+       "lastName": "Kang Ageng Gilang",
+       "gender": "male",
+       "age": 20,
+       "nim": "2311104018"
+    }
+  ]
+}

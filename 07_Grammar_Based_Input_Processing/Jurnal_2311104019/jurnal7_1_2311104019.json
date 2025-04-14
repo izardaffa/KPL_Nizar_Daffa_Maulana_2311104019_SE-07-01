@@ -1,0 +1,15 @@
+{
+   "firstName": "Nizar",
+   "lastName": "Daffa Maulana",
+   "gender": "male",
+   "age": 20,
+   "address": {
+       "streetAddress": "Kembaran Wetan",
+       "city": "Purbalingga",
+       "state": "Center Java"
+   },
+   "courses": [
+       { "code": "CRI2C4", "name": "Konstruksi Perangkat Lunak" },
+       { "code": "CRI2R2", "name": "Arsitektur dan Desain Perangkat Lunak" }
+   ]
+}
