@@ -1,0 +1,44 @@
+{
+	"courses": [
+		{
+			"code": "CCK2JAC2",
+			"name": "Proyek Tingkat II"
+		},
+		{
+			"code": "CCK2KAB4",
+			"name": "Konstruksi Perangkat Lunak"
+		},
+		{
+			"code": "CCK2HAB4",
+			"name": "Basis Data"
+		},
+		{
+			"code": "CCK2FAB4",
+			"name": "Arsitektur dan Desain Perangkat Lunak"
+		},
+		{
+			"code": "CCK2KAB4",
+			"name": "Konstruksi Perangkat Lunak"
+		},
+		{
+			"code": "CCK2FAB4",
+			"name": "Arsitektur dan Desain Perangkat Lunak"
+		},
+		{
+			"code": "CCK1KAB3",
+			"name": "Rekayasa Kebutuhan Perangkat Lunak"
+		},
+		{
+			"code": "CCK2HAB4",
+			"name": "Basis Data"
+		},
+		{
+			"code": "CCK2GAB3",
+			"name": "Interaksi Manusia Komputer"
+		},
+		{
+			"code": "CCK2CAB3",
+			"name": "Pemodelan Perangkan Lunak"
+		}
+	]
+}
