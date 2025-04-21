@@ -1,0 +1,13 @@
+export const config = {
+  lang: 'id',
+  transfer: {
+    threshold: 25000000,
+    low_fee: 6500,
+    high_fee: 15000
+  },
+  methods: ['RTO (real-time)', 'SKN', 'RTGS', 'BI Fast'],
+  confirmation: {
+    en: 'yes',
+    id: 'ya'
+  },
+};

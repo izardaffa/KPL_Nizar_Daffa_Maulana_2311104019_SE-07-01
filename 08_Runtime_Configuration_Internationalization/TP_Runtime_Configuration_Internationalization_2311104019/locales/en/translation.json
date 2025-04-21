@@ -1,0 +1,9 @@
+{
+  "insert_money": "Please insert the amount of money to transfer: ",
+  "total_amount": "Total amount = {{totalAmount}}",
+  "select_method": "Select transfer method: ",
+  "select_method_title": "Transfer method:",
+  "confirmation": "Please type {{confirmation}} to confirm the transaction: ",
+  "success": "The transfer is completed!",
+  "cancel": "Transfer is cancelled."
+}

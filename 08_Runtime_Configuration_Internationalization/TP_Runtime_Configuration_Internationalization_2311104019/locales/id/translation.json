@@ -1,0 +1,9 @@
+{
+  "insert_money": "Masukkan jumlah uang yang akan di-transfer: ",
+  "total_amount": "Total biaya = {{totalAmount}}",
+  "select_method": "Pilih metode transfer: ",
+  "select_method_title": "Metode transfer:",
+  "confirmation": "Ketik {{confirmation}} untuk mengkonfirmasi transaksi: ",
+  "success": "Proses transfer berhasil!",
+  "cancel": "Transfer dibatalkan."
+}
